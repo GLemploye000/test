@@ -1,0 +1,19 @@
+          leftWheelSpeed, rightWheelSpeed
+        
+    
+    r = 0  # radius of wheel [mm]
+    L = 0  # length between rear and front wheel axis [mm]
+    dr= 0  # distance between rear wheels [mm]
+
+    def __init__(self, r, L, dr) - None
+        self.r = r
+        self.L = L
+        self.dr= dr
+        pass
+    
+    def R_frontInner(self, delta)  # R1 == R2
+        return (self.L  (math.sin(math.radians(delta))))
+    
+    def R_rearInner(self, delta)  # R3
+        return (self.L  (math.tan(math.radians(delta)))) - (self.dr2)
+    
